@@ -16,6 +16,26 @@
     Sei possessore di Partita Iva? <br />
     Scopri tutte le tasse che dovrai sostenere...
   </h3>
-  <div id="container"></div>
+  <div id="container">
+    <div>
+      <label for="codici">Tipologia lavoratore...</label>
+      <select name="codici" id="cod">
+        <option value="Commer">45-Commerciante</option>
+        <option value="Interm">46-Intermediario del commercio</option>
+        <option value="Immob">68-Settore Immobiliare</option>
+        <option value="Profes">64-Liberi professionisti e artigiani</option>
+        <option value="Forfet">Regime Forfettario</option>
+        <option value="Altro">Altri settori lavorativi</option>
+      </select>
+    </div>
+    <div>
+      <label for="reddito">Reddito Annuo Lordo</label>
+      <input type="number" id="reddito" name="reddito" />
+    </div>
+    <div>
+      <button id="btn">Calcola</button>
+    </div>
+  </div>
+  <section id="result"></section>
   <body></body>
 </html>
